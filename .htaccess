@@ -1,3 +1,0 @@
-Options +FollowSymLinks
-RewriteEngine On
-RewriteRule "^$" "/cgi-bin/index.py" [R,L]

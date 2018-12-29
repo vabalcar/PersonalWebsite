@@ -1,0 +1,69 @@
+html {
+    --fg-color: #3E926E;
+    --bg-color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-color);
+    color: var(--fg-color);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+h1 {
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+    padding-left: 15pt;
+    padding-right: 15pt;
+    padding-top: 15pt;
+    padding-bottom: 10pt;
+    font-size: 20pt;
+    display: inline-block;
+    border-right: 2pt solid var(--fg-color);
+    border-top: 2pt solid var(--fg-color);
+    border-bottom: 2pt solid var(--fg-color);
+}
+
+p {
+    padding-left: 20pt;
+    padding-right: 20pt;
+    font-size: 15pt;
+}
+
+article section {
+    size: 12pt;
+    padding-left: 15pt;
+    padding-right: 15pt;
+    line-height: 15pt;
+    margin-top: 15pt;
+    text-align: justify;
+}
+
+#menu {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 15pt;
+    margin-bottom: 15pt;
+}
+
+#menu li {
+    width: 100%;
+    height: 50pt;
+}
+
+#menu li span {
+    display: inline-block;
+    font-size: 20pt;
+    transform: translate(20pt, 15pt);
+}
+
+#menu li:hover {
+    background: var(--fg-color);
+    color: var(--bg-color);
+    transition: all linear 50ms;
+    cursor: pointer;
+}

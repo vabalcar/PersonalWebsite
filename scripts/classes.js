@@ -43,7 +43,7 @@ class WebTree {
         webTreeRoot.nodeId = this._lastNodeId;
         ++this._lastNodeId;
 
-        webTreeRoot.path = webTreeRoot.parent ? `${webTreeRoot.parent.path}/${webTreeRoot.folder}/` : `${window.location.href}${webTreeRoot.folder}/`;
+        webTreeRoot.path = webTreeRoot.parent ? `${webTreeRoot.parent.path}/${webTreeRoot.folder}/` : `${window.location.origin}${window.location.pathname}${webTreeRoot.folder}/`;
         
         if (!webTreeRoot.children) {
             return;
@@ -183,7 +183,7 @@ class WebView {
         const cacheRecord = this._getCacheRecord(webTreeNode);
         this._currentTitleView.innerHTML = cacheRecord.title;
     }
-    
+
     _drawMenu(webTreeNode) {
         const cacheRecord = this._getCacheRecord(webTreeNode);
         this._currentMenuView.innerHTML = cacheRecord.menuView;
@@ -199,7 +199,7 @@ class WebView {
             this._currentContentView.innerHTML = '';
             return;
         }
-        
+
         const cacheRecord = this._getCacheRecord(webTreeNode);
         if (!cacheRecord.contentView) {
             this._loader

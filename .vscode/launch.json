@@ -8,21 +8,21 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch in Chrome",
-            "url": "http://localhost/personal/vabalcar.cz/PersonalWebsite",
+            "url": "http://localhost/personal/PersonalWebsite/code",
             "webRoot": "${workspaceFolder}"
         },
         {
             "type": "firefox",
             "request": "launch",
             "name": "Launch in Firefox",
-            "url": "http://localhost/personal/vabalcar.cz/PersonalWebsite",
+            "url": "http://localhost/personal/PersonalWebsite/code",
             "webRoot": "${workspaceFolder}"
         },
         {
             "type": "pwa-msedge",
             "request": "launch",
             "name": "Launch in Edge",
-            "url": "http://localhost/personal/vabalcar.cz/PersonalWebsite",
+            "url": "http://localhost/personal/PersonalWebsite/code",
             "webRoot": "${workspaceFolder}"
         }
     ]

@@ -1,9 +1,17 @@
 html {
     --fg-color: #64AD8E;
     --bg-color: black;
+
     --headline-font-size: 20pt;
     --li-font-size: 17pt;
     --content-font-size: 15pt;
+}
+
+@media (prefers-color-scheme: light) {
+    html {
+        --fg-color: #242424;
+        --bg-color: #ECECEC;
+    }
 }
 
 body {
@@ -15,7 +23,7 @@ body {
     font-weight: bold;
 }
 
-a {    
+a {
     color: var(--fg-color);
 }
 
